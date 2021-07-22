@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Good Times";
+    src: url(../fonts/good\ times\ rg.ttf);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://static.wixstatic.com/media/168bae_7ebf61e601064a13ac0f38d2d8cf8926~mv2.gif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+.synButton {
+    font-size: 50px;
+    text-align: center;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    border-left: #ff901f solid 10px;
+    border-bottom: #ff901f solid 10px;
+    border-right: #ffd319 solid 4px;
+    border-top: #ffd319 solid 4px;
+    background-color: #00F1FF;
+    animation: Synthwave 10s linear infinite, SynthBorder 5s linear infinite;
+    font-family: "Good Times";
+    padding: 5px;
+
+} 
+
+.thwaveButton {
+    font-size: 50px;
+    text-align: center;
+    user-select: none;
+    border: 5px solid white;
+    color: white;
+    min-width: 240px;
+    font-family: "Good Times";
+    padding: 5px;
+}
+
+@keyframes Synthwave  {
+    20% {background-color: #0161E8;}
+    40% {background-color: #290CFF;}
+    60% {background-color: #9B00E8;}
+    80% {background-color: #FF019A;}
+    100% {background-color: #00F1FF;}
+}
+
+@keyframes SynthBorder {
+    50% {
+        border-left: #ffd319 solid 10px;
+        border-bottom: #ffd319 solid 10px;
+        border-right: #ff901f solid 4px;
+        border-top: #ff901f solid 4px;
+    }
+    100% {
+        border-left: #ff901f solid 10px;
+        border-bottom: #ff901f solid 10px;
+        border-right: #ffd319 solid 4px;
+        border-top: #ffd319 solid 4px;
+    }
+}
